@@ -15,12 +15,12 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
 </head>
 <body>
-
-  <!-- Header -->
+ <!-- Header -->
   <header>
-    <div class="header-top mb-3">
+    <div class="header-top">
       <div class="container">
         <ul class="g-list d-flex justify-content-between justify-content-sm-end">
           <li class="g-list__item me-sm-4">
@@ -61,8 +61,30 @@
     </div>
   </header>
 
-  <main class="d-none">
-    <h1>Welcome to Texans Crown Towing - Your Trusted Partner in Emergency Towing!</h1>
+  <main class="d-flex flex-column">
+    <section class="hero">
+      <!-- Banner -->
+      <img class="hero__banner" src="images/banner.png" alt="" />
+      <div class="hero-shadow"></div>
+
+      <div class="container">
+
+        <div class="hero-content">
+          <h1 class="hero__title">Welcome to <b>Texans Crown Towing</b> - Your Trusted Partner in Emergency Towing!</h1>
+
+          <div class="hero-box d-flex justify-content-center">
+            <div class="blur-btn-group">
+              <a class="hero__btn phone" href="tel:+17139296299">+1 (713) 929-6299</a>
+              <button class="hero__btn schedule">Schedule a Towing</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- scroller -->
+      <a class="d-none d-lg-block hero__mouse" href=""><img src="images/icons/mouse.svg" alt="scroll next section" /></a>
+    </section>
 
     <p>
       At Heavy Duty Towing Georgetown TX, we're committed to providing reliable heavy-duty towing services 24/7. Our team
@@ -73,6 +95,10 @@
       difference with Heavy Duty Towing Georgetown TX - your trusted towing partner.
     </p>
   </main>
+
+  <footer></footer>
+
+  <a href="tel:+17139296299" class="g-pulse-button g-hover-opacity g-animation phone-fixed"></a>
 
   <!-- Site overlay -->
   <div class="site-overlay" id="site-overlay"></div>
@@ -92,13 +118,13 @@
           <li class="mobile-menu__item js-menu-close"><a class="mobile-menu__link" href="#">Contact</a></li>
           <li class="mobile-menu__item js-menu-close">
             <a class="mobile-menu__link" href="#">
-              <img src="images/icons/telephone.svg" alt="call">
+              <img class="me-1" src="images/icons/telephone.svg" alt="call">
               <span>+1 (844) 900-8697</span>
             </a>
           </li>
           <li class="mobile-menu__item js-menu-close">
             <a class="mobile-menu__link" href="mailto:info@texanscrowntowing.com">
-              <img src="images/icons/mail.svg" alt="mail">
+              <img class="me-1" src="images/icons/mail.svg" alt="mail">
               <span class="mail-link">dispatch@txcrowntowing.com</span>
             </a>
           </li>

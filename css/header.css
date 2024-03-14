@@ -1,7 +1,9 @@
 header {
     position: fixed;
+    z-index: 99;
     width: 100%;
     top: 0;
+    background: white;
 }
 
 .header-top {
@@ -19,6 +21,11 @@ header {
 
 .header-top img {
     margin-right: 10px;
+}
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header-nav__item {

@@ -21,6 +21,38 @@ html {
   margin: 0;
 }
 
+.g-pulse-button {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #e63937;
+  box-shadow: 0 0 0 7px rgba(230, 57, 55, .6);
+  position: relative;
+}
+
+.g-pulse-button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #e63937;
+  border-radius: 50%;
+  animation: button_pulse 2s linear infinite;
+}
+
+.phone-fixed {
+  position: fixed;
+  left: 60px;
+  bottom: 60px;
+  background-image: url("../images/icons/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -61,4 +93,31 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+@keyframes button_pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .g-pulse-button {
+    display: block;
+    width: 90px;
+    height: 90px;
+  }
+
+  .phone-fixed {
+    left: 45px;
+    bottom: 45px;
+  }
 }

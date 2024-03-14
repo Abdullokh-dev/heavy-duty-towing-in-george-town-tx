@@ -2,26 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="images/logo.png" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heavy Duty Towing In George Town TX</title>
+  <meta name="title" content="Heavy Duty Towing In George Town TX." />
+  <meta name="description" content="Experienced with a strong background in web technologies. Worked both remotely and on-site with friendly colleagues. Looking for a new career opportunity and would appreciate your contact and offer." />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
 
-  <h1>Welcome to Texans Crown Towing - Your Trusted Partner in Emergency Towing!</h1>
-  <p>
-    At Heavy Duty Towing Georgetown TX, we're committed to providing reliable heavy-duty towing services 24/7. Our team
-    is always ready to assist you with any road-related issues, ensuring your safety and peace of mind. We work closely
-    with our network of licensed affiliates to ensure prompt arrival at your location, whether you're heading home or to
-    an important event. With our experienced staff, you can trust that your vehicle is in good hands. Our goal is to
-    redefine towing services in Georgetown, offering excellence and efficiency to the community. Experience the
-    difference with Heavy Duty Towing Georgetown TX - your trusted towing partner.
-  </p>
+  <!-- Header -->
+  <header>
+    <div class="header-top mb-3">
+      <div class="container">
+        <ul class="g-list d-flex justify-content-between justify-content-sm-end">
+          <li class="g-list__item me-sm-4">
+            <a class="header-top__link" href="tel:+17139296299">
+              <img src="images/icons/telephone.svg" alt="phone" />
+              <span class="d-none d-sm-flex">(713) 929-6299</span>
+            </a>
+          </li>
+          <li>
+            <a class="header-top__link" href="mailto:info@texanscrowntowing.com">
+              <img src="images/icons/mail.svg" alt="mail" />
+              <span class="d-none d-sm-flex mail-link">dispatch@txcrowntowing.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="header-container container">
+      <div class="header d-flex align-items-center">
+        <a class="logo-link me-auto" href="">
+          <img class="header-logo" src="images/logo.png" width="228" height="76" alt="Heavy Duty Towing In George Town TX" />
+        </a>
+
+        <nav class="header-nav d-none d-md-block">
+          <ul class="header-nav__list d-flex g-list">
+            <li class="header-nav__item"><a class="header-nav__link" href="">About Us</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="">Services</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="">Reviews</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="header__menu-toggler p-0 d-flex d-md-none" type="button" id="burger">
+          <img class="burger-icon" src="images/icons/burger.svg" width="37" height="27" alt="toggle menu">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="d-none">
+    <h1>Welcome to Texans Crown Towing - Your Trusted Partner in Emergency Towing!</h1>
+
+    <p>
+      At Heavy Duty Towing Georgetown TX, we're committed to providing reliable heavy-duty towing services 24/7. Our team
+      is always ready to assist you with any road-related issues, ensuring your safety and peace of mind. We work closely
+      with our network of licensed affiliates to ensure prompt arrival at your location, whether you're heading home or to
+      an important event. With our experienced staff, you can trust that your vehicle is in good hands. Our goal is to
+      redefine towing services in Georgetown, offering excellence and efficiency to the community. Experience the
+      difference with Heavy Duty Towing Georgetown TX - your trusted towing partner.
+    </p>
+  </main>
+
+  <!-- Site overlay -->
+  <div class="site-overlay" id="site-overlay"></div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu__close-btn js-menu-close">
+      <img class="close-btn-icon" src="images/icons/close.svg" width="25" height="25" alt="x">
+    </button>
+
+    <div class="mobile-menu__body">
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item js-menu-close"><a class="mobile-menu__link" href="#">About Us</a></li>
+          <li class="mobile-menu__item js-menu-close"><a class="mobile-menu__link" href="#">Services</a></li>
+          <li class="mobile-menu__item js-menu-close"><a class="mobile-menu__link" href="#">Reviews</a></li>
+          <li class="mobile-menu__item js-menu-close"><a class="mobile-menu__link" href="#">Contact</a></li>
+          <li class="mobile-menu__item js-menu-close">
+            <a class="mobile-menu__link" href="#">
+              <img src="images/icons/telephone.svg" alt="call">
+              <span>+1 (844) 900-8697</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item js-menu-close">
+            <a class="mobile-menu__link" href="mailto:info@texanscrowntowing.com">
+              <img src="images/icons/mail.svg" alt="mail">
+              <span class="mail-link">dispatch@txcrowntowing.com</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,102 @@
+.our-services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #F3F7FFFF;
+}
+
+.service-title {
+    font-size: 38px;
+    margin: 0 0 40px 0;
+    position: relative;
+    text-align: center;
+}
+
+.service-title:after {
+    content: '';
+    display: flex;
+    margin: 0 auto;
+    width: 90px;
+    height: 4px;
+    background-color: #e63937;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service .service__card {
+    background-color: #fff;
+    color: #222;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;flex-direction: column;
+    height: 100%;
+    transition: box-shadow, transform .3s;
+}
+
+.bi-box-arrow-up-right {
+    overflow: visible;
+    margin-top: auto;
+}
+
+.bi-box-arrow-up-right path {
+    transition: all .3s;
+}
+
+.service .service__card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.service .service__card:hover .bi-box-arrow-up-right path:nth-child(2n) {
+    transform: translateY(-2px) translateX(2px);
+}
+
+.service:nth-child(2n) .service__card {
+    background-color: #6357ad;
+    color: #fff;
+}
+
+.service-box__title {
+    font-size: 24px;
+    margin: 0 0 8px 0;
+}
+
+.service p {
+    font-size: 18px;
+    margin: 0 0 16px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .service:nth-child(2n) .service__card {
+        background-color: #fff;
+        color: #222;
+    }
+
+    .service:nth-child(4n) .service__card, .service:nth-child(4n -3) .service__card {
+        background-color: #6357ad;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .service:nth-child(2n) .service__card {
+        background-color: #fff;
+        color: #222;
+    }
+
+    .service:nth-child(4n) .service__card, .service:nth-child(4n -3) .service__card {
+        background-color: #fff;
+        color: #222;
+    }
+
+    .service:nth-child(odd) .service__card {
+        background-color: #6357ad;
+        color: #fff;
+    }
+
+    .service-title {
+        font-size: 30px;
+    }
+}

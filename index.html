@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
  <!-- Header -->
@@ -62,7 +63,8 @@
   </header>
 
   <main class="d-flex flex-column">
-    <section class="hero">
+    <!-- Hero -->
+    <section class="hero" id="hero">
       <!-- Banner -->
       <img class="hero__banner" src="images/banner.png" alt="" />
       <div class="hero-shadow"></div>
@@ -83,17 +85,37 @@
       </div>
 
       <!-- scroller -->
-      <a class="d-none d-lg-block hero__mouse" href=""><img src="images/icons/mouse.svg" alt="scroll next section" /></a>
+      <a class="d-none d-lg-block hero__mouse" href="#about"><img src="images/icons/mouse.svg" alt="scroll next section" /></a>
     </section>
 
-    <p>
-      At Heavy Duty Towing Georgetown TX, we're committed to providing reliable heavy-duty towing services 24/7. Our team
-      is always ready to assist you with any road-related issues, ensuring your safety and peace of mind. We work closely
-      with our network of licensed affiliates to ensure prompt arrival at your location, whether you're heading home or to
-      an important event. With our experienced staff, you can trust that your vehicle is in good hands. Our goal is to
-      redefine towing services in Georgetown, offering excellence and efficiency to the community. Experience the
-      difference with Heavy Duty Towing Georgetown TX - your trusted towing partner.
-    </p>
+    <!-- About us -->
+    <section class="about-us" id="about">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <h2 class="about-us__subtitle">Heavy duty towing</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 class="about-us__title">About Us</h2>
+            <p class="about-us__title-dsc">Texan’s Crown Towing</p>
+            <p class="about-us__info me-lg-3">
+              <strong>At Heavy Duty Towing Georgetown TX, we're committed to providing reliable heavy-duty towing services 24/7.</strong>
+              <br>
+              Our team is always ready to assist you with any road-related issues, ensuring your safety and
+              peace of mind. We work closely with our network of licensed affiliates to ensure prompt arrival at your
+              location, whether you're heading home or to an important event. With our experienced staff, you can trust
+              that your vehicle is in good hands. Our goal is to redefine towing services in Georgetown, offering excellence
+              and efficiency to the community. Experience the difference with Heavy Duty Towing Georgetown
+              TX - your trusted towing partner.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 d-flex">
+            <img class="mx-auto my-auto ms-lg-auto" src="images/about.png" alt="Heavy Duty Towing" />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer></footer>

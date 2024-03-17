@@ -86,7 +86,6 @@ img {
 
 /* OUTLINE STYLES */
 *:focus {
-  outline: 2px dashed #000;
   outline-offset: 3px;
 }
 

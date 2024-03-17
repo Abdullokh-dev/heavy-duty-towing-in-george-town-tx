@@ -35,3 +35,44 @@ if (header_burger && mobile_close_btn && site_overlay) {
   console.log('not working');
 }
 
+$(document).ready(function () {
+  $('.slider').slick({
+    arrows: true,
+    adaptiveHeight: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    speed: 500,
+    easing: 'ease',
+    infinite: true,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    touchThreshold: 10,
+    appendArrows: $('.slider__arrows'),
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+});
